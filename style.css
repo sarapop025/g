@@ -1,0 +1,661 @@
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family:
+        Arial,
+        "Tahoma",
+        sans-serif;
+
+    background: #f4f6f9;
+
+    color: #333;
+
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   HEADINGS
+======================================== */
+
+h1 {
+    margin-top: 0;
+
+    font-size: 28px;
+
+    color: #1f2937;
+}
+
+h2 {
+    margin-top: 25px;
+
+    font-size: 22px;
+
+    color: #374151;
+}
+
+h3 {
+    color: #374151;
+}
+
+
+/* ========================================
+   LINKS
+======================================== */
+
+a {
+    color: #2563eb;
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background: #fff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+button {
+    padding: 9px 16px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ========================================
+   TABLE
+======================================== */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+
+    background: #fff;
+}
+
+th {
+    background: #e5e7eb;
+
+    color: #111827;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #d1d5db;
+
+    padding: 9px;
+
+    vertical-align: middle;
+}
+
+td {
+    background: #fff;
+}
+
+tr:hover td {
+    background: #f9fafb;
+}
+
+
+/* ========================================
+   HR
+======================================== */
+
+hr {
+    border: 0;
+
+    border-top: 1px solid #e5e7eb;
+
+    margin: 25px 0;
+}
+
+
+/* ========================================
+   MESSAGE
+======================================== */
+
+.success {
+    padding: 12px 15px;
+
+    margin: 15px 0;
+
+    border-radius: 6px;
+
+    background: #dcfce7;
+
+    border: 1px solid #86efac;
+
+    color: #166534;
+}
+
+.error {
+    padding: 12px 15px;
+
+    margin: 15px 0;
+
+    border-radius: 6px;
+
+    background: #fee2e2;
+
+    border: 1px solid #fca5a5;
+
+    color: #991b1b;
+}
+
+.warning {
+    padding: 12px 15px;
+
+    margin: 15px 0;
+
+    border-radius: 6px;
+
+    background: #fef3c7;
+
+    border: 1px solid #fcd34d;
+
+    color: #92400e;
+}
+
+
+/* ========================================
+   DASHBOARD
+======================================== */
+
+.dashboard-menu {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.dashboard-menu a {
+    display: block;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: #f3f4f6;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    color: #1f2937;
+
+    font-weight: bold;
+}
+
+.dashboard-menu a:hover {
+    background: #e5e7eb;
+
+    text-decoration: none;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   STAT BOX
+======================================== */
+
+.stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.stat-box {
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: #f9fafb;
+
+    text-align: center;
+}
+
+.stat-box .number {
+    display: block;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+.stat-box .label {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #555;
+}
+
+
+/* ========================================
+   GPA
+======================================== */
+
+.gpa-box {
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    background: #f9fafb;
+
+    font-size: 20px;
+}
+
+.gpa {
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   REPORT
+======================================== */
+
+.report-card {
+    background: #fff;
+
+    border: 1px solid #ccc;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+
+    border-radius: 8px;
+}
+
+.report-header {
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   PRINT BUTTON
+======================================== */
+
+.print-button {
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   LOGIN
+======================================== */
+
+.login-container {
+    width: 95%;
+
+    max-width: 450px;
+
+    margin: 80px auto;
+
+    padding: 30px;
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.login-container input,
+.login-container select {
+    max-width: none;
+
+    width: 100%;
+}
+
+.login-container button {
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.nav {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.nav a {
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    background: #f3f4f6;
+}
+
+.nav a:hover {
+    background: #e5e7eb;
+
+    text-decoration: none;
+}
+
+
+/* ========================================
+   ACTION BUTTON
+======================================== */
+
+.btn {
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #2563eb;
+
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+
+    text-decoration: none;
+}
+
+.btn-danger {
+    background: #dc2626;
+
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #b91c1c;
+
+    text-decoration: none;
+}
+
+.btn-success {
+    background: #16a34a;
+
+    color: white;
+}
+
+.btn-success:hover {
+    background: #15803d;
+
+    text-decoration: none;
+}
+
+
+/* ========================================
+   RESPONSIVE TABLE
+======================================== */
+
+.table-responsive {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 98%;
+
+        padding: 15px;
+
+        margin: 15px auto;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+
+    button {
+        width: auto;
+
+        padding: 8px 12px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+        max-width: 100%;
+    }
+
+}
+
+
+/* ========================================
+   PRINT
+======================================== */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .container {
+        width: 100%;
+
+        max-width: none;
+
+        margin: 0;
+
+        padding: 0;
+
+        box-shadow: none;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    button {
+        display: none;
+    }
+
+    a {
+        color: black;
+
+        text-decoration: none;
+    }
+
+    .report-card {
+        border: 1px solid #000;
+
+        page-break-inside: avoid;
+
+        border-radius: 0;
+    }
+
+    table {
+        page-break-inside: auto;
+    }
+
+    tr {
+        page-break-inside: avoid;
+
+        page-break-after: auto;
+    }
+
+}
